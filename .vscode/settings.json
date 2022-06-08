@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.sass": "sass", 
+    "*.scss": "scss", 
+    "*.css": "scss", 
+  },
+  "nuxt.isNuxtApp": false
+}

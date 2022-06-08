@@ -1,0 +1,157 @@
+@import "lib/vars.css";
+@import "lib/mixins.css";
+@import "lib/fontface.css";
+
+* {
+  border-radius: 1px solid pink;
+}
+
+html,
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5rem;
+  color: #333;
+  background-color: #fff;
+  font-family: "Roboto";
+  background: linear-gradient(0deg, rgb(210, 235, 255) 0%, rgba(255,255,255,1) 41%, rgba(255,255,255,1) 100%);
+}
+
+.background {
+  width: 100%;
+}
+.logo{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+img{
+  width: 300px;
+}
+.app{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 700px;
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+  background: rgba(149, 181, 220, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(149, 181, 220, 0.3);
+}
+
+.searcher {
+  padding: 2rem;
+}
+
+.intro_text {
+  outline: none;
+  width: 250px;
+  height: 2rem;
+  border-radius: 20px;
+}
+
+.search_icon {
+  margin-left: 1rem;
+}
+
+input {
+  padding-left: 1rem;
+}
+
+.pokemon_card_holder{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.pokemon{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #225aad;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 1.5rem;
+  margin: 5px;
+  width: 15rem;
+  text-align: center;
+}
+
+.items_container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.img_pokemon_container {
+  justify-content: center;
+  align-items: center;
+  img {
+
+  }
+}
+
+h3 {
+  font-size: 1.5em;
+  font-family: "Fungis";
+  font-variant-caps:small-caps;
+  color: white;
+}
+
+
+
+h4 {
+  font-size: 1rem;
+  font-family: "Fungis";
+  font-variant-caps:small-caps;
+  color: white;
+}
+
+.intro_text {
+  font-family: "Roboto";
+  font-weight: normal;
+  border-radius: 2px solid pink;
+
+}
+
+picture{
+  //background-color: white;
+  border-radius: 30px;
+  margin: 0.1rem;
+  width: 8rem;
+}
+ul{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ align-items: center;
+ color: #fff;
+}
+li{
+  padding-right: .5rem;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.footer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 2rem;
+}
+.reset_list {
+  font-weight: bold;
+  border-radius: 20px;
+  height: 2rem;
+  width: 200px;
+  background-color:#FFCB05;
+}

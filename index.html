@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/assets/images/Poké_Ball_icon.svg.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Pokedex</title>
+</head>
+
+<body class="background bg-[url('https://i.pinimg.com/originals/a1/86/a8/a186a8aff83506c70b0b307e3fb062c8.png')]">
+  <div class="app">
+    <div class="logo">
+      <img src="assets/images/logo_pokedex.png" alt="logo" />
+      <form class="searcher">
+        <input type="text" placeholder="Search your Pokemon here..." value="" class="intro_text" />
+        <button class="search_icon">
+          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20 20L15.514 15.506L20 20ZM18 9.5C18 11.7543 17.1045 13.9163 15.5104 15.5104C13.9163 17.1045 11.7543 18 9.5 18C7.24566 18 5.08365 17.1045 3.48959 15.5104C1.89553 13.9163 1 11.7543 1 9.5C1 7.24566 1.89553 5.08365 3.48959 3.48959C5.08365 1.89553 7.24566 1 9.5 1C11.7543 1 13.9163 1.89553 15.5104 3.48959C17.1045 5.08365 18 7.24566 18 9.5V9.5Z"
+              stroke="black" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div
+      class="alert flex justify-center items-center m-6 w-83 mx-auto my-2 bg-red-500 rounded-3xl p-6 hidden">
+      <div class="column_1">
+        <img src="./assets/images/Poké_Ball_icon.svg.png" alt="">
+      </div>
+      <div class="column_2">
+        <p class="text-white font-medium text-2xl m-2">This Pokemon doesn't exist</p>
+        <button
+          class=" flex justify-center items-center bg-white text-red-500 font-bold px-8 rounded-3xl">Retry</button>
+      </div>
+    </div>
+
+    <div class="pokemon_card_holder">
+      <div class="pokemon">
+        <h3 class="justify-center ">title</h3>
+        <picture>
+          <img src="assets/images/logo.png" alt="logo" />
+        </picture>
+        <nav>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer">
+      <button class="reset_list">
+        Reset list
+      </button>
+    </div>
+
+    <div
+      class="loader fixed top-0 left-0 w-full h-full bg-slate-900 bg-opacity-70 rounded-2xl flex justify-center items-center hidden">
+      <div
+        class="loader_holder justify-center items-center w-[200px] h-[60px]  px-8 py-4 font-bold text-amber-400 text-2xl">
+        ..loading</div>
+    </div>
+  </div>
+  <script type="module" src="/app/main.js"></script>
+</body>
+
+</html>
